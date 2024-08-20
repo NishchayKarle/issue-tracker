@@ -26,7 +26,7 @@ const IssuesPage = async () => {
                         <Table.Row key={issue.id}>
                             <Table.Cell>
                                 <Link href={`/issues/${issue.id}`}>
-                                {issue.title}
+                                    {issue.title}
                                 </Link>
                                 <div className="block md:hidden">
                                     <IssueStatusBadge status={issue.status} />
@@ -45,5 +45,7 @@ const IssuesPage = async () => {
         </div>
     );
 };
+
+export const dynamic = "force-dynamic";
 
 export default IssuesPage;
