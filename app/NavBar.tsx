@@ -3,7 +3,7 @@
 import classnames from 'classnames';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AiFillBug } from "react-icons/ai"
+import { AiFillBug } from "react-icons/ai";
 
 const NavBar = () => {
     const currentPath = usePathname();
@@ -14,7 +14,7 @@ const NavBar = () => {
             label: "Dashboard",
         },
         {
-            href: "/issues",
+            href: "/issues/list",
             label: "Issues",
         },
     ];
